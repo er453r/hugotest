@@ -1,0 +1,5 @@
+{{ partial "header.html" . }}
+<h1>{{ .Title }}</h1>
+<h6>{{ .PublishDate.Format "2006-12-31" }}</h6>
+{{ .Content }}
+{{ partial "footer.html" . -}}
